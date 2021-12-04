@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Solak</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="guess, game">
+    <meta name="description" content="guess the height">
+    <link rel="stylesheet" href="style.css">
+    <!--Script To use Font-Awesome-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+
+    <h2>Guess the height (px)</h2>
+    <div class="container">
+        <div id="height"></div>
+    </div>
+
+    <div class="wrapper">
+        <input id="guess" class="align-center" type="number" placeholder="px" >
+        <button id="btn" class="align-center" onClick="checkResult()">Guess</button>
+        <button id="btn2" class="align-center" onClick="location.reload()"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    
+    
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

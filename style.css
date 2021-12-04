@@ -1,0 +1,106 @@
+body{
+    background-color: #4d194d;
+    color: #fff;
+    box-sizing: border-box; 
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#height{
+    background-color: #fedfd4;
+    width: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+input{
+    background-color: #fedfd4;
+    border: none;
+    padding: 8px;
+    transition: 0.5s;
+}
+
+input::placeholder{
+    text-align: right;
+}
+
+input:focus{
+    background-color: #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.align-center{
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    padding: 4px;
+    background-color: #ffffff;
+    border: none;
+    color: #4d194d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: #fedfd4;
+}
+
+#btn:active{
+    background-color: green;
+    color: #fff;
+}
+
+#btn2{
+    font-size: 17px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+#btn2:hover{
+    transform: rotate(360deg);
+    color:rgba(254, 223, 212, 0.6);
+}
+
+#btn2:active{
+    color: green;
+}
+
+#result{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/*fade-in effect for the generated div*/
+.container  {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
