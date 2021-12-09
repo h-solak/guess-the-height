@@ -104,3 +104,23 @@ input:focus{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media screen and (max-width: 980px) {
+    h2{
+        font-size: 50px;
+    }
+    input{
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    #btn{
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    #btn2{
+        font-size: 30px;
+    }
+    #result{
+        font-size: 50px;
+    }
+}
